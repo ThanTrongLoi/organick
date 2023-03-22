@@ -827,7 +827,7 @@ BLOG
 
 .blog__content-item .blog__item-content .blog__item-text {
   margin-bottom: 4.4rem;
-  padding-right: 3.7rem;
+  /* padding-right: 3rem; */
 }
 
 .blog__content-item .blog__item-content .blog__item-text.blog_page {

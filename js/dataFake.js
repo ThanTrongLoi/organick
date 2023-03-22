@@ -253,6 +253,55 @@ const team = [
     }
   },
 ]
-
+const blog = [
+  {
+    id: 1,
+    image: '../assets/blog1.png',
+    date: '25-Nov',
+    admin: 'Rachi Card',
+    title: 'The Benefits of Vitamin D & How to Get It',
+    content: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'
+  },
+  {
+    id: 2,
+    image: '../assets/blog2.png',
+    date: '25-Nov',
+    admin: 'Rachi Card',
+    title: 'Our Favorite Summertime Tomato',
+    content: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'
+  },
+  {
+    id: 1,
+    image: '../assets/blog3.png',
+    date: '25-Nov',
+    admin: 'Rachi Card',
+    title: 'Benefits of Vitamin C & How to Get It',
+    content: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'
+  },
+  {
+    id: 2,
+    image: '../assets/blog4.png',
+    date: '25-Nov',
+    admin: 'Rachi Card',
+    title: 'Research More Organic Foods',
+    content: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'
+  },
+  {
+    id: 1,
+    image: '../assets/blog5.png',
+    date: '25-Nov',
+    admin: 'Rachi Card',
+    title: 'Everyday Fresh Fruites',
+    content: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'
+  },
+  {
+    id: 2,
+    image: '../assets/blog6.png',
+    date: '25-Nov',
+    admin: 'Rachi Card',
+    title: 'Don’t Use Plastic Product! it’s Kill Nature',
+    content: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'
+  },
+]
    
-export {card_list,portfolio_list,team}
+export {card_list,portfolio_list,team,blog}

@@ -7,5 +7,4 @@ const innerCardProduct = (arr,idpr) => {
     </div>
 `
 }
-
 export {innerCardProduct}
