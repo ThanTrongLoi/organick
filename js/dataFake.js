@@ -183,8 +183,76 @@ const card_list = [
       sale: "$15.00",
       star: 5,
     },
-  ];
+];
 
+const team = [
+  {
+    id: 1,
+    image: '../assets/team1.png',
+    name: 'Giovani Bacardo',
+    profession: 'Farmer',
+    social: {
+      insta: '',
+      fb: 'abc',
+      tw: 'abc'
+    }
+  },
+  {
+    id: 2,
+    image: '../assets/team2.png',
+    name: 'Marianne Loreno',
+    profession: 'Designer',
+    social: {
+      insta: 'abc',
+      fb: 'abc',
+      tw: 'abc'
+    }
+  },
+  {
+    id: 3,
+    image: '../assets/team3.png',
+    name: 'Riga Pelore',
+    profession: 'Farmer',
+    social: {
+      insta: 'abc',
+      fb: 'abc',
+      tw: 'abc'
+    }
+  },
+  {
+    id: 4,
+    image: '../assets/team4.png',
+    name: 'Keira Knightley',
+    profession: 'Farmer',
+    social: {
+      insta: '',
+      fb: 'abc',
+      tw: 'abc'
+    }
+  },
+  {
+    id: 5,
+    image: '../assets/team5.png',
+    name: 'Scott Lawrence',
+    profession: 'Designer',
+    social: {
+      insta: 'abc',
+      fb: 'abc',
+      tw: 'abc'
+    }
+  },
+  {
+    id: 6,
+    image: '../assets/team6.png',
+    name: 'Karen Allen',
+    profession: 'Farmer',
+    social: {
+      insta: 'abc',
+      fb: 'abc',
+      tw: 'abc'
+    }
+  },
+]
 
    
-export {card_list,portfolio_list}
+export {card_list,portfolio_list,team}

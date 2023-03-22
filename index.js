@@ -5,6 +5,7 @@ import homePage from "./js/pageHome.js";
 import shopSingle from "./js/pageShopSingle.js";
 import servicePage from "./js/pageService.js";
 import portfolioPage from "./js/pagePortfolio.js";
+import teamPage from "./js/pageTeam.js";
 // import shopPage from "./js/shop_page.js"
 
 // window.onscroll = function(){offSetTop()}
@@ -44,7 +45,9 @@ switch (window.location.href) {
     break;
   case window.location.origin + `/${"portfolio.html"}`:
     portfolioPage();
-    // console.log("page")
+    break;
+  case window.location.origin + `/${"team.html"}`:
+    teamPage();
     break;
   default:
     break

@@ -2,7 +2,7 @@ import { portfolio_list } from "./dataFake.js";
 
 
 
-const portfolio_item = (portfolio_list) => {
+const portfolio_item = () => {
   let item = "";
   for (let i = 0; i < portfolio_list.length; i++) {
     item += `
@@ -19,15 +19,13 @@ const portfolio_item = (portfolio_list) => {
         </a>
       </div>`
   }
-  console.log(item)
   return item;
 }
 
 const portfolioPage = () => {
-  console.log('page ne')
   document.getElementById("por_item").innerHTML = `
   <div class="portfolio_list">
-    ${portfolio_item(portfolio_list)}
+    ${portfolio_item()}
   </div>`;
 }
 export default portfolioPage
