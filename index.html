@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- HEADER START -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img srcset="./assets/Logo.png" alt="Logo" />
+      </a>
+      <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <div class="dropdown">
+          <button href="#" class="dropdownBtn">Pages <img src="./assets/Vector.png" alt="" /></button>
+          <div class="dropdown__content">
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./team.html">Team</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <a href="./shop.html">Shop</a> <a href="./service.html">Projects</a> <a href="./blog.html">News</a>
+      </nav>
+      <div class="icons">
+        <a href="#" class="search_icon"><img src="./assets/search.svg" alt="" /></a>
+        <div class="cart_group">
+          <a href="#" class="cart_icon"><img src="./assets/cart_icon.svg" alt="" /></a>
+          <span>Cart&nbsp;(0)</span>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" id="header-menu"></i>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HOME START -->
+    <section id="home" class="home">
+      <div class="home__banner">
+        <div class="home__banner--img">
+          <img src="./assets/banner.png" alt="">
+        </div>
+        <div class="home__banner--group">
+          <div class="home__banner-title">
+            <h4>100% Natural Food</h4>
+            <h1>
+              Choose the best<br />
+              healthier way<br />
+              of life
+            </h1>
+          </div>
+          <div class="home__banner--btn">
+            <a class="btn-default btn-2">Explore Now <img src="./assets/Aerrow.png" /></a>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="home__offer-banner">
+        <div class="home__offer-left">
+          <img src="./assets/offer-left.png" alt="" />
+          <div class="home__offer-content">
+            <h4 style="color: white">Natural!!</h4>
+            <h3 style="color: white">
+              Get Garden<br />
+              Fresh Fruits
+            </h3>
+          </div>
+        </div>
+        <div class="home__offer-right">
+          <img src="./assets/offer-right.png" alt="" />
+          <div class="home__offer-content">
+            <h4>Offer!!</h4>
+            <h3>Get 10% off<br />on Vegetables</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOME END -->
+    <!-- ABOUT START -->
+    <section id="about" class="about">
+      <div class="about__content">
+        <div class="about__content--img">
+          <img src="./assets/Group 18.png" alt="">
+        </div>
+        <div class="about__content--group">
+          <div class="about__content--heading">
+            <h4>About Us</h4>
+            <h2>
+              We Believe in Working<br />
+              Accredited Farmers
+            </h2>
+            <p>
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley.
+            </p>
+          </div>
+          <div class="about__content-point">
+            <div class="about__point">
+              <div class="about__point-image">
+                <img src="./assets/icon-organic.png" alt="" />
+              </div>
+              <div class="about__point-text">
+                <h6>Organic Foods Only</h6>
+                <p>
+                  Simply dummy text of the printing and typesetting<br />
+                  industry. Lorem Ipsum
+                </p>
+              </div>
+            </div>
+            <div class="about__point">
+              <div class="about__point-image">
+                <img src="./assets/icon-quality.png" alt="" />
+              </div>
+              <div class="about__point-text">
+                <h6>Organic Foods Only</h6>
+                <p>
+                  Simply dummy text of the printing and typesetting<br />
+                  industry. Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about__btn">
+            <a href="#" class="btn-default btn-1">Shop Now <img src="./assets/Aerrow.png" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT END -->
+    <!-- PRODUCTS START -->
+    <section id="products" class="products">
+      <div class="container-fluid products__heading">
+        <div class="products__title">
+          <h4>Categories</h4>
+          <h2>Our Products</h2>
+        </div>
+        <!-- card list start -->
+        <div id="products_list"></div>
+        <!-- card list end -->
+      </div>
+      <a href="#" class="btn-default btn-1">Load More <img srcset="./assets/Aerrow.png" /></a>
+    </section>
+    <!-- PRODUCTS END -->
+
+    <!-- Testimonial START -->
+    <section id="testimonial" class="testimonial">
+      <div class="testimonial__img">
+        <img src="./assets/testimonial-bg.png" alt="" />
+      </div>
+      <div class="testimonial__content">
+        <div class="testimonial__content-heading">
+          <div class="testimonial__content-title">
+            <h4>Testimonial</h4>
+            <h2>What Our Customer Saying?</h2>
+          </div>
+          <div class="testimonial__content-review">
+            <img src="./assets/testiphoto.png" class="testimonial__content-avt" alt="" />
+            <div>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>
+              Simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been.
+            </p>
+            <h6>Sara Taylor</h6>
+            <p class="consumer">Consumer</p>
+            <div class="navigation">
+              <div class="navigation__point"></div>
+              <div class="navigation__point point__active"></div>
+              <div class="navigation__point"></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__content-counter">
+          <div class="circle">
+            <h2>100%</h2>
+            <p>Organic</p>
+          </div>
+          <div class="circle">
+            <h2>285</h2>
+            <p>Active Product</p>
+          </div>
+          <div class="circle">
+            <h2>350+</h2>
+            <p>Organic Orchads</p>
+          </div>
+          <div class="circle">
+            <h2>25+</h2>
+            <p>Years of Farming</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial END -->
+    <!-- Offer START -->
+    <section id="offer" class="offer">
+      <div class="container-fluid">
+        <div class="offer__heading">
+          <div class="offer__heading-title">
+            <h4>Offer</h4>
+            <h2 style="color: white">We Offer Organic For You</h2>
+          </div>
+          <a href="#" class="btn-default btn-2">View All Product<img src="./assets/Aerrow.png" /></a>
+        </div>
+        <div id="offer_list" class="offer_list"></div>
+      </div>
+    </section>
+    <!-- Offer END -->
+    <!-- Introduce START -->
+    <section id="introduce" class="introduce">
+      <div class="introduce__img">
+        <img src="./assets/introduce.png" alt="" />
+      </div>
+      <div class="introduce__content">
+        <div class="introduce__content-title">
+          <h4>Eco Friendly</h4>
+          <h2>
+            Econis is a Friendly<br />
+            Organic Store
+          </h2>
+        </div>
+        <div class="introduce__content-point">
+          <div>
+            <h6>Start with Our Company First</h6>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptat
+              accusantium doloremque laudantium. Sed ut perspiciatis.
+            </p>
+          </div>
+          <div>
+            <h6>Learn How to Grow Yourself</h6>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptat
+              accusantium doloremque laudantium. Sed ut perspiciatis.
+            </p>
+          </div>
+          <div>
+            <h6>Farming Strategies of Today</h6>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptat
+              accusantium doloremque laudantium. Sed ut perspiciatis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Introduce END -->
+
+    <!-- Gallery START -->
+    <section id="gallery" class="gallery">
+      <div class="gallery__item">
+        <img src="./assets/gallery-item1.png" alt="" />
+        <a href="" class="btn-default btn-4">Organic Juice</a>
+      </div>
+      <div class="gallery__item">
+        <img src="./assets/gallery-item2.png" alt="" />
+        <a href="" class="btn-default btn-4">Organic Food</a>
+      </div>
+      <div class="gallery__item">
+        <img src="./assets/gallery-item3.png" alt="" />
+        <a href="" class="btn-default btn-4">Nuts Cookis</a>
+      </div>
+    </section>
+    <!-- Gallery END -->
+
+    <!-- Blog START -->
+    <section id="blog" class="blog">
+      <div class="container-fluid">
+        <div class="blog__heading">
+          <div>
+            <h4>News</h4>
+            <h2>
+              Discover weekly content about<br />
+              organic food, & more
+            </h2>
+          </div>
+          <a href="#" class="btn-default btn-3">More News<img src="./assets/Aerrow.png" /></a>
+        </div>
+        <div class="blog__content">
+          <div class="blog__content-item">
+            <img src="./assets/blog1.png" alt="" />
+            <div class="blog__item-date">
+              <h6>25<br />Nov</h6>
+            </div>
+            <div class="blog__item-content">
+              <div class="blog__item-admin">
+                <img src="./assets/avt.png" alt="" />
+                <p style="color: #274c5b">By Rachi Card</p>
+              </div>
+              <div class="blog__item-text">
+                <h6>The Benefits of Vitamin D & How to Get It</h6>
+                <p>
+                  Simply dummy text of the printing and typesetting<br />
+                  industry. Lorem Ipsum
+                </p>
+              </div>
+              <a href="#" class="btn-default btn-2">Read More <img src="./assets/Aerrow.png" /></a>
+            </div>
+          </div>
+          <div class="blog__content-item">
+            <img src="./assets/blog2.png" alt="" />
+            <div class="blog__item-date">
+              <h6>25<br />Nov</h6>
+            </div>
+            <div class="blog__item-content">
+              <div class="blog__item-admin">
+                <img src="./assets/avt.png" alt="" />
+                <p style="color: #274c5b">By Rachi Card</p>
+              </div>
+              <div class="blog__item-text">
+                <h6>Our Favourite Summertime Tommeto</h6>
+                <p>
+                  Simply dummy text of the printing and typesetting<br />
+                  industry. Lorem Ipsum
+                </p>
+              </div>
+              <a href="#" class="btn-default btn-2">Read More <img src="./assets/Aerrow.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog END -->
+    <!-- Newslatteer START -->
+    <section id="newslatteer" class="newslatteer">
+      <div class="container-fluid newslatteer__main">
+        <img src="./assets/bg-newslatteer.png" alt="" />
+        <div class="newslatteer_group">
+          <div class="newslatteer__content">
+            <h2 style="color: #ffffff">
+              Subscribe to<br />
+              our Newsletter
+            </h2>
+          </div>
+          <div class="newslatteer__box">
+            <form action="">
+              <input type="text" placeholder="Your Email Address" />
+              <button type="submit" class="btn-default btn-1">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newslatteer END -->
+    <!-- Footer START -->
+    <footer id="footer" class="footer">
+      <div class="container-fluid">
+        <div class="footer__content">
+          <div class="contactus">
+            <h5>Contact Us</h5>
+            <p><strong>Email</strong><br />needhelp@Organia.com</p>
+            <p><strong>Phone</strong><br />666 888 888</p>
+            <p><strong>Address</strong><br />88 road, borklyn street, USA</p>
+          </div>
+          <div class="footer__logo">
+            <img src="./assets/Logo.png" alt="" />
+            <p>
+              Simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum simply dummy text of the printing
+            </p>
+            <div class="social">
+              <a href="#"><img src="./assets/Insta.png" alt=""></a>
+              <a href="#"><img src="./assets/Fb.png" alt=""></a>
+              <a href="#"><img src="./assets/Twiter.png" alt=""></a>
+              <a href="#"><img src="./assets/Pintrest.png" alt=""></a>
+            </div>
+          </div>
+          <div class="utilitypages">
+            <h5>Utility Pages</h5>
+            <p>Style Guide</p>
+            <p>404 Not Found</p>
+            <p>Password Protected</p>
+            <p>Licences</p>
+            <p>Changelog</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p>Copyright &copy; <strong>Organick</strong> | Designed by <strong>VictorFlow</strong> Templates - Powered by
+        <strong>Webflow</strong> Code by <strong>Thân Trọng Lợi</strong>
+      </p>
+    </footer>
+    <!-- Footer END -->
+  </div>
+  <!-- main js -->
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
