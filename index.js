@@ -31,7 +31,7 @@ document.querySelector('#header-menu').onclick = () => {
 // ============================================ CARD ITEMS START ============================================
 console.log(window.location.href)
 switch (window.location.href) {
-  case (window.location.origin + `/${"organick/index.html"}` ||  window.location.origin + `/${"organick/#"}`) :
+  case (window.location.origin + `/${"organick/index.html"}` ||  window.location.origin + `/${"organick/"}`) :
     homePage()
     blogPage(blog.slice(0,2),"h-blogId")
     break;
