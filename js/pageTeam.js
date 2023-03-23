@@ -6,7 +6,7 @@ const teamItem = (arr) => {
         item += `
         <div class="team__card--item">
             <div class="team__card--img">
-              <img src=${arr[i].image} alt="">
+              <img src=${arr[i].image} alt=${arr[i].name}>
             </div>
             <div class="team__card--content">
               <div class="team__card--heading">
