@@ -31,32 +31,33 @@ document.querySelector('#header-menu').onclick = () => {
 // ============================================ CARD ITEMS START ============================================
 console.log(window.location.href)
 switch (window.location.href) {
-  case window.location.origin + `/${"/organick/index.html"}`:
+  case window.location.origin + `/${"organick/index.html"}`:
     homePage()
     blogPage(blog.slice(0,2),"h-blogId")
     break;
-  case window.location.origin + `/${"about.html"}`:
+  case window.location.origin + `/${"organick/about.html"}`:
     teamPage(team.slice(0, 3), "ab-teamId")
     break;
-  case window.location.origin + `/${"shop.html"}`:
+  case window.location.origin + `/${"organick/shop.html"}`:
     shopPage();
     break;
-  case window.location.origin + `/${"shopsingle.html"}`:
+  case window.location.origin + `/${"organick/shopsingle.html"}`:
     shopSingle();
     break;
-  case window.location.origin + `/${"service.html"}`:
+  case window.location.origin + `/${"organick/service.html"}`:
     servicePage();
     break;
-  case window.location.origin + `/${"portfolio.html"}`:
+  case window.location.origin + `/${"organick/portfolio.html"}`:
     portfolioPage();
     break;
-  case window.location.origin + `/${"team.html"}`:
+  case window.location.origin + `/${"organick/team.html"}`:
     teamPage(team, "teamId");
     break;
-  case window.location.origin + `/${"blog.html"}`:
+  case window.location.origin + `/${"organick/blog.html"}`:
     blogPage(blog,"blogId")
     break;
   default:
+    
     break
 }
 
