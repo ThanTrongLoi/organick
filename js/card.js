@@ -18,7 +18,7 @@ const card_product = (arr) => {
               <span class="card__item-title">${arr[i].title}</span>
               <div class="card__item-price">
                   <span class="card__price-left">
-                    <span>${arr[i].price}</span> ${arr[i].sales}
+                    <span>${arr[i].price}</span> ${arr[i].sale}
                   </span>
                   <div class="card__price-right">
                       ${stars(arr[i].star)}
