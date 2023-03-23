@@ -1,4 +1,4 @@
-import { card_list, portfolio_list, team,blog } from "./js/dataFake.js";
+import { card_list, portfolio_list, team, blog } from "./js/dataFake.js";
 import portfolio_item from "./js/pagePortfolio.js";
 import shopPage from "./js/pageShop.js";
 import homePage from "./js/pageHome.js";
@@ -31,9 +31,13 @@ document.querySelector('#header-menu').onclick = () => {
 // ============================================ CARD ITEMS START ============================================
 console.log(window.location.href)
 switch (window.location.href) {
-  case (window.location.origin + `/${"organick/index.html"}` ||  window.location.origin + `/${"organick/"}`) :
+  case window.location.origin + `/${"organick/index.html"}`:
     homePage()
-    blogPage(blog.slice(0,2),"h-blogId")
+    blogPage(blog.slice(0, 2), "h-blogId")
+    break;
+  case window.location.origin + `/${"organick/"}`:
+    homePage()
+    blogPage(blog.slice(0, 2), "h-blogId")
     break;
   case window.location.origin + `/${"organick/about.html"}`:
     teamPage(team.slice(0, 3), "ab-teamId")
@@ -54,10 +58,10 @@ switch (window.location.href) {
     teamPage(team, "teamId");
     break;
   case window.location.origin + `/${"organick/blog.html"}`:
-    blogPage(blog,"blogId")
+    blogPage(blog, "blogId")
     break;
   default:
-    
+
     break
 }
 
