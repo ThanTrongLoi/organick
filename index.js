@@ -28,8 +28,8 @@ document.querySelector('#header-menu').onclick = () => {
   console.log('nav bar ne')
 }
 
+
 // ============================================ CARD ITEMS START ============================================
-console.log(window.location.href)
 switch (window.location.href) {
   case window.location.origin + `/${"organick/index.html"}`:
     homePage()
@@ -61,9 +61,66 @@ switch (window.location.href) {
     blogPage(blog, "blogId")
     break;
   default:
-
+    
     break
 }
+// switch (window.location.href) {
+//   case window.location.origin + `/${"index.html"}`:
+//     homePage()
+//     blogPage(blog.slice(0, 2), "h-blogId")
+//     break;
+//   case window.location.origin + `/${""}`:
+//     homePage()
+//     blogPage(blog.slice(0, 2), "h-blogId")
+//     break;
+//   case window.location.origin + `/${"about.html"}`:
+//     teamPage(team.slice(0, 3), "ab-teamId")
+//     break;
+//   case window.location.origin + `/${"shop.html"}`:
+//     shopPage();
+//     break;
+//   case window.location.origin + `/${"shopsingle.html"}`:
+//     shopSingle();
+//     break;
+//   case window.location.origin + `/${"service.html"}`:
+//     servicePage();
+//     break;
+//   case window.location.origin + `/${"portfolio.html"}`:
+//     portfolioPage();
+//     break;
+//   case window.location.origin + `/${"team.html"}`:
+//     teamPage(team, "teamId");
+//     break;
+//   case window.location.origin + `/${"blog.html"}`:
+//     blogPage(blog, "blogId")
+//     break;
+//   default:
 
+//     break
+// }
 
 // ============================================ CARD ITEMS END ============================================
+
+
+
+
+// ============================================ SCROLL REVEAL START ============================================
+
+// function revealActive (el){
+//   el.classList.add('reveal-active')
+// } 
+
+ScrollReveal({
+  distance:'100px',
+  duration: 1500,
+  delay:500, 
+  mobile: false
+});
+
+ScrollReveal().reveal('.home__banner, .reveal-top', { origin: 'top' });
+ScrollReveal().reveal('.reveal-bottom', { origin: 'bottom' });
+ScrollReveal().reveal('.reveal-right', { origin: 'right',});
+ScrollReveal().reveal('.reveal-left', { origin: 'left' });
+ScrollReveal().reveal('.reveal-flip', { rotate: {x: 20, y: 20, z: 40} });
+// ScrollReveal().reveal('reveal-top, .reveal-bottom, .reveal-right,.reveal-left', { afterReveal: revealActive});
+// ============================================ SCROLL REVEAL END ============================================

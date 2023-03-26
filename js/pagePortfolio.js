@@ -6,7 +6,7 @@ const portfolio_item = () => {
   let item = "";
   for (let i = 0; i < portfolio_list.length; i++) {
     item += `
-      <div href="#" class="portfolio__item">
+      <div href="#" class="portfolio__item reveal-bottom">
         <div class="portfolio__item--img">
           <img src=${portfolio_list[i].image} alt="">
         </div>

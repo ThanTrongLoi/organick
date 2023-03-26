@@ -10,7 +10,7 @@ const card_product = (arr) => {
   let items = ""
   for(let i = 0; i < arr.length; i++){
     items += `
-    <a href=${'./shopsingle.html'} class="card__item">
+    <a href=${'./shopsingle.html'} class="card__item reveal-bottom">
           <span class="card__item-category">${arr[i].category}</span>
           <div class="card__item-image">
             <img src=${arr[i].image} alt="" />

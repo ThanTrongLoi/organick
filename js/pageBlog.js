@@ -1,11 +1,12 @@
 import { blog } from "./dataFake.js";
 
+
 const blogItem = (arr) => {
-    let cl = "btn-default btn-2"
-    let item = ""
-    for (let i = 0; i < arr.length; i++) {
-        item += `
-        <div class="blog__content-item">
+  let cl = "btn-default btn-2"
+  let item = ""
+  for (let i = 0; i < arr.length; i++) {
+    item += `
+        <div class="blog__content-item ${i % 2 == 0 ? "reveal-left" : "reveal-right"}">
             <div class="blog__content-img">
                 <img src=${arr[i].image} alt="" />
             </div>
@@ -28,12 +29,17 @@ const blogItem = (arr) => {
             </div>
           </div>
         `
-    }
-    return item
+  }
+  return item
 }
 
-const blogPage = (arr,idb) => {
-    document.getElementById(idb).innerHTML = `
+const blogPage = (arr, idb) => {
+
+
+ 
+
+
+  document.getElementById(idb).innerHTML = `
         <div class="blog__content">
             ${blogItem(arr)}
         </div>

@@ -1,10 +1,11 @@
 import { team } from "./dataFake.js";
 
+
 const teamItem = (arr) => {
     let item = ""
     for (let i = 0; i < arr.length; i++){
         item += `
-        <div class="team__card--item">
+        <div class="team__card--item reveal-bottom">
             <div class="team__card--img">
               <img src=${arr[i].image} alt=${arr[i].name}>
             </div>
@@ -14,9 +15,9 @@ const teamItem = (arr) => {
                 <h4>${arr[i].profession}</h4>
               </div>
               <div class="team__card--social">
-                ${arr[i].social.insta !== "" ? `<img src="./assets/Insta.png" alt="">` : ""}
-                ${arr[i].social.Fb !== "" ? `<img src="./assets/Fb.png" alt="">` : ""}
-                ${arr[i].social.Twiter !== "" ? `<img src="./assets/Twiter.png" alt="">` : ""}
+                <a href="#">${arr[i].social.insta !== "" ? `<img src="./assets/Insta.png" alt="">` : ""}</a>
+                <a href="#">${arr[i].social.Fb !== "" ? `<img src="./assets/Fb.png" alt="">` : ""}</a>
+                <a href="#">${arr[i].social.Twiter !== "" ? `<img src="./assets/Twiter.png" alt="">` : ""}</a>
                 </div>
             </div>
         </div>
