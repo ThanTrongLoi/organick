@@ -305,3 +305,7 @@ const blog = [
 ]
 
 export { card_list, portfolio_list, team, blog }
+
+
+
+
