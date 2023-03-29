@@ -15,73 +15,49 @@
 <body>
     <div class="container">
         <!-- HEADER START -->
-    <header class="header">
-        <a href="#" class="logo">
-          <img srcset="./assets/Logo.png" alt="Logo" />
-        </a>
-        <nav class="navbar">
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <div class="dropdown">
-            <button href="#" class="dropdownBtn">Pages <img src="./assets/Vector.png" alt="" /></button>
-            <div class="dropdown__content">
-              <a href="./portfolio.html">Portfolio</a>
-              <a href="./team.html">Team</a>
-              <a href="./contact.html">Contact</a>
+        <header class="header">
+            <a href="#" class="logo">
+                <img srcset="./assets/Logo.png" alt="Logo" />
+            </a>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <div class="dropdown">
+                    <button href="#" class="dropdownBtn">Pages <img src="./assets/Vector.png" alt="" /></button>
+                    <div class="dropdown__content">
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./team.html">Team</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </div>
+                <a href="./shop.html">Shop</a> <a href="./service.html">Projects</a> <a href="./blog.html">News</a>
+            </nav>
+            <div class="icons">
+                <a href="#" class="search_icon" id="search-btn"><img src="./assets/search.svg" alt="" /></a>
+                <div class="cart_group">
+                    <a href="#" class="cart_icon"><img src="./assets/cart_icon.svg" alt="" /></a>
+                    <span>Cart&nbsp;(0)</span>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" id="header-menu"></i>
             </div>
-          </div>
-          <a href="./shop.html">Shop</a> <a href="./service.html">Projects</a> <a href="./blog.html">News</a>
-        </nav>
-        <div class="icons">
-          <a href="#" class="search_icon" id="search-btn"><img src="./assets/search.svg" alt="" /></a>
-          <div class="cart_group">
-            <a href="#" class="cart_icon"><img src="./assets/cart_icon.svg" alt="" /></a>
-            <span>Cart&nbsp;(0)</span>
-          </div>
-          <i class="fa fa-bars" aria-hidden="true" id="header-menu"></i>
-        </div>
-        <div class="search-form">
-          <input type="search" id="search-box" placeholder="search here...">
-          <label for="sesarch-box" class="fas fa-search"></label>
-  
-        </div>
-        <div id="autocom-box" class="autocom-box"></div>
-      </header>
-      <!-- HEADER END -->
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="sesarch-box" class="fas fa-search"></label>
+
+            </div>
+            <div id="autocom-box" class="autocom-box"></div>
+        </header>
+        <!-- HEADER END -->
         <!-- banner START -->
         <div class="singleBanner reveal-top">
             <img src="./assets/singlebanner.png" alt="">
         </div>
+
         <!-- banner END -->
         <section id="single" class="single">
+            <div id="sgpro"></div>
             <div class="container-fluid">
-                <div class="single__detail">
-                    <div class="single__detail--img">
-                        <img src="./assets/white-nuts.png" alt="">
-                    </div>
-                    <div class="single__detail--content">
-                        <h3>Health Pistachios</h3>
-                        <div class="star">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <h6><span>$20.00</span> $13.00</h6>
-                        <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                        </p>
-                        <div class="single__btn">
-                            <form action="">
-                                <label for="quantity">Quantity :</label>
-                                <input type="number" id="quantity" name="quantity" value=1>
-                                <button type="submit" class="btn-default btn-1">Add To Cart <img
-                                        src="./assets/Aerrow.png" /></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                <div id="sg-detail"></div>
                 <div class="single__info">
                     <div class="single__info--btn">
                         <button class="btn-info btn-1">Product Description</button>
@@ -163,8 +139,8 @@
     </div>
     <!-- Scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- main js -->
 
+    <!-- main js -->
     <script src="index.js" type="module"></script>
 </body>
 

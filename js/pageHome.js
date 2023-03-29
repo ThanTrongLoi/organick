@@ -1,5 +1,4 @@
 import { card_list } from "./dataFake.js";
-// import card_product from "./card.js";
 import { innerCardProduct } from "./inner.js";
 
 const homePage = () => {
