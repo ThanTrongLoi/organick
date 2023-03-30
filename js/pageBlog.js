@@ -24,7 +24,7 @@ const blogItem = (arr) => {
                   ${arr[i].content}
                 </p>
               </div>
-              <a href="#" class="">Read More <img src="./assets/Aerrow.png"
+              <a id="read-more">Read More <img src="./assets/Aerrow.png"
               /></a>
             </div>
           </div>
@@ -35,15 +35,29 @@ const blogItem = (arr) => {
 
 const blogPage = (arr, idb) => {
 
-
- 
-
-
   document.getElementById(idb).innerHTML = `
         <div class="blog__content">
             ${blogItem(arr)}
         </div>
     `
+
+  for(let i = 0; i < arr.length; i++){
+    document.querySelectorAll("#read-more")[i].addEventListener('click',()=>{
+
+      let img = arr[i].image
+      let date = arr[i].date
+      let admin = arr[i].admin
+      let title=  arr[i].title
+
+      localStorage.setItem("img",img)
+      localStorage.setItem("date",date)
+      localStorage.setItem("admin",admin)
+      localStorage.setItem("title",title)
+
+      location.href = "blog_single.html"
+
+    })
+  }
 }
 
 export default blogPage

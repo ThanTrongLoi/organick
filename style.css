@@ -993,6 +993,7 @@ BLOG
   font-weight: 700;
   line-height: 2.3rem;
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 

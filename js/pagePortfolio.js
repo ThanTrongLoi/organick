@@ -14,7 +14,7 @@ const portfolio_item = () => {
           <h6>${portfolio_list[i].title}</h6>
           <h4>${portfolio_list[i].category}</h4>
         </div>
-        <a href=${'./portfolio_single.html'} class="portfolio__item--icon">
+        <a id="pdetail" class="portfolio__item--icon">
           <img src=${`../assets/aerow_icon.svg`} alt="">
         </a>
       </div>`
@@ -27,5 +27,17 @@ const portfolioPage = () => {
   <div class="portfolio_list">
     ${portfolio_item()}
   </div>`;
+
+  for(let i = 0; i < portfolio_list.length; i++ ){
+    document.querySelectorAll('#pdetail')[i].addEventListener('click',()=>{
+      let img = portfolio_list[i].image
+      let title = portfolio_list[i].title
+
+      localStorage.setItem("img",img)
+      localStorage.setItem("title",title)
+
+      location.href = "portfolio_single.html"
+    })
+  }
 }
 export default portfolioPage
