@@ -107,11 +107,17 @@ switch (window.location.href) {
   case window.location.origin + `/${"organick/portfolio.html"}`:
     portfolioPage();
     break;
+  case window.location.origin + `/${"organick/portfolio_single.html"}`:
+    portSingle();
+    break;
   case window.location.origin + `/${"organick/team.html"}`:
     teamPage(team, "teamId");
     break;
   case window.location.origin + `/${"organick/blog.html"}`:
     blogPage(blog, "blogId")
+    break;
+  case window.location.origin + `/${"organick/blog_single.html"}`:
+    blogSG();
     break;
   default:
 
