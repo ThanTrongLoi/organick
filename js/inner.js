@@ -1,5 +1,6 @@
 import card_product from "./card.js";
 
+
 const innerCardProduct = (arr, idpr) => {
     document.getElementById(idpr).innerHTML = `
     <div class="card__list">
@@ -19,24 +20,15 @@ const innerCardProduct = (arr, idpr) => {
             //save to localStorage
             // localStorage.setItem(KEY,VALUE)
 
-            localStorage.setItem("img",img)
-            localStorage.setItem("title",title)
-            localStorage.setItem("price",price)
-            localStorage.setItem("sale",sale)
-            localStorage.setItem("star",star)
+            localStorage.setItem("img", img)
+            localStorage.setItem("title", title)
+            localStorage.setItem("price", price)
+            localStorage.setItem("sale", sale)
+            localStorage.setItem("star", star)
 
             location.href = "shopsingle.html"
         })
-    }
-    console.log(document.querySelectorAll('#add_cart'))
-    for (let i = 0; i< arr.length; i++){
-        let cart = []
-        document.querySelectorAll('#add_cart')[i].addEventListener('click',()=>{
-            cart.push(arr[i])
-        })
-        console.log('=============')
-        console.log(cart)
-    }
 
+    }
 }
 export { innerCardProduct }
